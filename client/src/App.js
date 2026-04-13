@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 
-const API = "http://localhost:5000/notes";
+const API = "https://notes-backend-tdfv.onrender.com";
 
 function App() {
   const [notes, setNotes] = useState([]);
