@@ -6,8 +6,10 @@ const notesRoutes = require("./routes/notes");
 const app = express();
 
 app.use(cors({
-  origin: "*"
+  origin: "*",
+  methods: ["GET", "POST", "PUT", "DELETE"],
 }));
+
 
 app.use(bodyParser.json());
 
